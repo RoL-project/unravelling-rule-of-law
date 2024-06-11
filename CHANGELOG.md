@@ -1,0 +1,63 @@
+# Changelog
+All notable changes to "Unravelling the Rule of Law Shiny App" will be documented in this file.
+
+## [Unreleased]
+
+## [Released]
+
+## [1.0.0] - 2024-06-11
+### Added
+- Badges in SVG on GitHub repository (WIP new repository).
+- Repository status badge (WIP new repository).
+- GNU GPLv3 license on GitHub repository (WIP new repository).
+- License CC BY-NC-ND 4.0 on GitHub repository (WIP new repository).
+### Changed
+- Repository from github.com/bgonzalezbustamante to github.com/RoL-project.
+- Shiny app code.
+- Cosine similarity estimates UK-US.
+- Cosine similarity estimates ParlaMint.
+- Minor corrections.
+
+## [0.3.5] - 2024-06-08
+### Changed
+- Cosine similarity estimates ParlaMint.
+- Minor corrections.
+
+## [0.3.4] - 2024-06-07
+### Changed
+- Cosine similarity estimates ParlaMint.
+
+## [0.3.3] - 2024-06-05
+### Changed
+- Cosine similarity estimates UK-US.
+
+## [0.3.2] - 2024-06-01
+### Changed
+- Cosine similarity estimates ParlaMint.
+- Minor corrections.
+
+## [0.3.1] - 2024-05-29
+### Changed
+- Shiny app code.
+- Cosine similarity estimates UK-US.
+
+## [0.3.0] - 2024-05-28
+### Added
+- Cosine similarity estimates ParlaMint.
+### Changed
+- Shiny app code.
+- Cosine similarity estimates UK-US.
+
+## [0.2.0] - 2024-05-27
+### Added
+- Changelog in MD format on GitHub repository.
+### Changed
+- Shiny app code.
+- Minor corrections.
+
+## [0.1.0] - 2024-05-22
+### Added
+- GitHub repository.
+- README in MD format on GitHub repository.
+- Shiny app code.
+- Cosine similarity estimates UK-US.
