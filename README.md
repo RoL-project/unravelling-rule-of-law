@@ -5,11 +5,13 @@
 
 ## Overview
 
-This repository has been used for this Shiny App.
+This repository has been used for this [**Shiny App**](https://rol-project.shinyapps.io/unravelling-rule-of-law/).
 
 ## Requirements
 
-The estimates were obtained using [Python_3.11.5](https://www.python.org/downloads/release/python-3115/) and the following dependencies for the [diachronic implementation](requirements_diachronic.txt) and these ones for the [bilingual word embeddings](requirements_bwe.txt). In addition, it is necessary [R_4.3.3](https://cran.r-project.org/bin/windows/base/old/4.3.3/), [tidyverse_2.0.0](https://cran.r-project.org/web/packages/tidyverse/index.html), [DBI_1.2.2](https://cran.r-project.org/web/packages/DBI/index.html), [RSQLite_2.3.6](https://cran.r-project.org/web/packages/RSQLite/index.html), [arrow_15.0.1](https://cran.r-project.org/web/packages/arrow/index.html) and [readtext_0.91](https://cran.r-project.org/web/packages/readtext/index.html) for preprocessing some data sets.
+The bootstrapped cosine estimates were obtained using [Python_3.11.5](https://www.python.org/downloads/release/python-3115/) and the following dependencies for the [diachronic implementation](requirements_diachronic.txt) and for the [bilingual word embeddings](requirements_bwe.txt). In addition, it is necessary [R_4.3.3](https://cran.r-project.org/bin/windows/base/old/4.3.3/), [tidyverse_2.0.0](https://cran.r-project.org/web/packages/tidyverse/index.html), [DBI_1.2.2](https://cran.r-project.org/web/packages/DBI/index.html), [RSQLite_2.3.6](https://cran.r-project.org/web/packages/RSQLite/index.html), [arrow_15.0.1](https://cran.r-project.org/web/packages/arrow/index.html) and [readtext_0.91](https://cran.r-project.org/web/packages/readtext/index.html) for preprocessing some data sets.
+
+The Shiny App used [shiny_1.8.1.1](https://cran.r-project.org/web/packages/shiny/index.html), [shinythemes_1.2.0](https://cran.r-project.org/web/packages/shinythemes/index.html), [ggplot2_3.5.0](https://cran.r-project.org/web/packages/ggplot2/index.html) and [dplyr_1.1.4](https://cran.r-project.org/web/packages/dplyr/index.html).
 
 ## License
 
