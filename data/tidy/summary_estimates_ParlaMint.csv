@@ -1,0 +1,241 @@
+﻿code,country,cluster,model,anchor,cosine,std,baseline
+AT,Austria,Procedural - Judiciary,Machine-Translated BWE,Naïve,,,0
+BA,Bosnia and Herzegovina,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.67352027,0.032913867,0.67352027
+BE,Belgium,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.6159333,0.010692616,0.6159333
+BG,Bulgaria,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.62447006,0.026725387,0.62447006
+CZ,Czech Republic,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.5461618,0.018517384,0.5461618
+DK,Denmark,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.3476614,0.02263796,0.3476614
+EE,Estonia,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.56527406,0.01580927,0.56527406
+ES,Spain,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.6570031,0.026620727,0.6570031
+FI,Finland,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.55443275,0.014454455,0.55443275
+FR,France,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.49639156,0.019550977,0.49639156
+GB,Great Britain,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.6876312,0.011294518,0.6876312
+GR,Greece,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.58731884,0.012789757,0.58731884
+HR,Croatia,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.60622394,0.019973151,0.60622394
+HU,Hungary,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.64248407,0.020157704,0.64248407
+IS,Iceland,Procedural - Judiciary,Machine-Translated BWE,Naïve,,,0
+IT,Italy,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.61394036,0.03561761,0.61394036
+LV,Latvia,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.62870616,0.019132465,0.62870616
+NL,Netherlands,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.5493396,0.011731165,0.5493396
+NO,Norway,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.48663288,0.01607513,0.48663288
+PL,Poland,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.5041702,0.02089589,0.5041702
+PT,Portugal,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.53355336,0.017877955,0.53355336
+RS,Serbia,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.68323934,0.013593687,0.68323934
+SE,Sweden,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.5626519,0.012267291,0.5626519
+SI,Slovenia,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.55307734,0.01653249,0.55307734
+TR,Turkey,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.74078125,0.014884171,0.74078125
+UA,Ukraine,Procedural - Judiciary,Machine-Translated BWE,Naïve,0.6130763,0.019704234,0.6130763
+AT,Austria,Procedural - Rules,Machine-Translated BWE,Naïve,0.5726337,0.023399785,0.5726337
+BA,Bosnia and Herzegovina,Procedural - Rules,Machine-Translated BWE,Naïve,0.7194448,0.044254176,0.7194448
+BE,Belgium,Procedural - Rules,Machine-Translated BWE,Naïve,0.5255762,0.019844491,0.5255762
+BG,Bulgaria,Procedural - Rules,Machine-Translated BWE,Naïve,0.6049503,0.022208741,0.6049503
+CZ,Czech Republic,Procedural - Rules,Machine-Translated BWE,Naïve,0.58855134,0.023863392,0.58855134
+DK,Denmark,Procedural - Rules,Machine-Translated BWE,Naïve,0.46541855,0.021519052,0.46541855
+EE,Estonia,Procedural - Rules,Machine-Translated BWE,Naïve,0.5831827,0.022660611,0.5831827
+ES,Spain,Procedural - Rules,Machine-Translated BWE,Naïve,0.5328835,0.0234512,0.5328835
+FI,Finland,Procedural - Rules,Machine-Translated BWE,Naïve,0.60203445,0.023885438,0.60203445
+FR,France,Procedural - Rules,Machine-Translated BWE,Naïve,0.52101094,0.021910388,0.52101094
+GB,Great Britain,Procedural - Rules,Machine-Translated BWE,Naïve,0.45827922,0.009829398,0.45827922
+GR,Greece,Procedural - Rules,Machine-Translated BWE,Naïve,0.5830616,0.018452775,0.5830616
+HR,Croatia,Procedural - Rules,Machine-Translated BWE,Naïve,0.57800287,0.014396789,0.57800287
+HU,Hungary,Procedural - Rules,Machine-Translated BWE,Naïve,0.5383137,0.018521387,0.5383137
+IS,Iceland,Procedural - Rules,Machine-Translated BWE,Naïve,0.7753061,0.057401687,0.7753061
+IT,Italy,Procedural - Rules,Machine-Translated BWE,Naïve,0.61616474,0.041303385,0.61616474
+LV,Latvia,Procedural - Rules,Machine-Translated BWE,Naïve,0.60191524,0.027106466,0.60191524
+NL,Netherlands,Procedural - Rules,Machine-Translated BWE,Naïve,0.4600886,0.015884249,0.4600886
+NO,Norway,Procedural - Rules,Machine-Translated BWE,Naïve,0.55786854,0.030893162,0.55786854
+PL,Poland,Procedural - Rules,Machine-Translated BWE,Naïve,0.45535985,0.017920522,0.45535985
+PT,Portugal,Procedural - Rules,Machine-Translated BWE,Naïve,0.56046677,0.032869954,0.56046677
+RS,Serbia,Procedural - Rules,Machine-Translated BWE,Naïve,0.5929314,0.01723752,0.5929314
+SE,Sweden,Procedural - Rules,Machine-Translated BWE,Naïve,0.54582345,0.019894069,0.54582345
+SI,Slovenia,Procedural - Rules,Machine-Translated BWE,Naïve,0.54913336,0.010358654,0.54913336
+TR,Turkey,Procedural - Rules,Machine-Translated BWE,Naïve,0.5976642,0.012199029,0.5976642
+UA,Ukraine,Procedural - Rules,Machine-Translated BWE,Naïve,0.64910716,0.023855003,0.64910716
+AT,Austria,Substantive - Democracy,Machine-Translated BWE,Naïve,0.66072476,0.015531388,0.66072476
+BA,Bosnia and Herzegovina,Substantive - Democracy,Machine-Translated BWE,Naïve,0.6966068,0.04122388,0.6966068
+BE,Belgium,Substantive - Democracy,Machine-Translated BWE,Naïve,0.7190315,0.012863474,0.7190315
+BG,Bulgaria,Substantive - Democracy,Machine-Translated BWE,Naïve,0.70839876,0.014595555,0.70839876
+CZ,Czech Republic,Substantive - Democracy,Machine-Translated BWE,Naïve,0.5773162,0.01915917,0.5773162
+DK,Denmark,Substantive - Democracy,Machine-Translated BWE,Naïve,0.4967565,0.019589137,0.4967565
+EE,Estonia,Substantive - Democracy,Machine-Translated BWE,Naïve,0.65778744,0.014865805,0.65778744
+ES,Spain,Substantive - Democracy,Machine-Translated BWE,Naïve,0.68304706,0.01395405,0.68304706
+FI,Finland,Substantive - Democracy,Machine-Translated BWE,Naïve,0.7170428,0.022612527,0.7170428
+FR,France,Substantive - Democracy,Machine-Translated BWE,Naïve,0.5876699,0.016028747,0.5876699
+GB,Great Britain,Substantive - Democracy,Machine-Translated BWE,Naïve,0.64292604,0.009973899,0.64292604
+GR,Greece,Substantive - Democracy,Machine-Translated BWE,Naïve,0.5519573,0.017774953,0.5519573
+HR,Croatia,Substantive - Democracy,Machine-Translated BWE,Naïve,0.6050281,0.016173188,0.6050281
+HU,Hungary,Substantive - Democracy,Machine-Translated BWE,Naïve,0.67961514,0.010696389,0.67961514
+IS,Iceland,Substantive - Democracy,Machine-Translated BWE,Naïve,0.3638903,0.031682245,0.3638903
+IT,Italy,Substantive - Democracy,Machine-Translated BWE,Naïve,0.6493799,0.019426413,0.6493799
+LV,Latvia,Substantive - Democracy,Machine-Translated BWE,Naïve,0.7469676,0.025831956,0.7469676
+NL,Netherlands,Substantive - Democracy,Machine-Translated BWE,Naïve,0.716683,0.013280042,0.716683
+NO,Norway,Substantive - Democracy,Machine-Translated BWE,Naïve,0.72552836,0.02174779,0.72552836
+PL,Poland,Substantive - Democracy,Machine-Translated BWE,Naïve,0.5614278,0.009968895,0.5614278
+PT,Portugal,Substantive - Democracy,Machine-Translated BWE,Naïve,0.6525711,0.017847832,0.6525711
+RS,Serbia,Substantive - Democracy,Machine-Translated BWE,Naïve,0.5714041,0.013230518,0.5714041
+SE,Sweden,Substantive - Democracy,Machine-Translated BWE,Naïve,0.6368166,0.011329252,0.6368166
+SI,Slovenia,Substantive - Democracy,Machine-Translated BWE,Naïve,0.59845614,0.016193302,0.59845614
+TR,Turkey,Substantive - Democracy,Machine-Translated BWE,Naïve,0.56833494,0.01714769,0.56833494
+UA,Ukraine,Substantive - Democracy,Machine-Translated BWE,Naïve,0.70338863,0.029057637,0.70338863
+AT,Austria,Substantive - Rights,Machine-Translated BWE,Naïve,0.7287989,0.017309694,0.7287989
+BA,Bosnia and Herzegovina,Substantive - Rights,Machine-Translated BWE,Naïve,0.6247918,0.047231827,0.6247918
+BE,Belgium,Substantive - Rights,Machine-Translated BWE,Naïve,0.7034743,0.010721261,0.7034743
+BG,Bulgaria,Substantive - Rights,Machine-Translated BWE,Naïve,0.6632022,0.019930156,0.6632022
+CZ,Czech Republic,Substantive - Rights,Machine-Translated BWE,Naïve,0.6839778,0.024950659,0.6839778
+DK,Denmark,Substantive - Rights,Machine-Translated BWE,Naïve,0.6875078,0.017089684,0.6875078
+EE,Estonia,Substantive - Rights,Machine-Translated BWE,Naïve,0.67196846,0.015637394,0.67196846
+ES,Spain,Substantive - Rights,Machine-Translated BWE,Naïve,0.6256149,0.025480077,0.6256149
+FI,Finland,Substantive - Rights,Machine-Translated BWE,Naïve,0.6927601,0.016486151,0.6927601
+FR,France,Substantive - Rights,Machine-Translated BWE,Naïve,0.66903454,0.019976947,0.66903454
+GB,Great Britain,Substantive - Rights,Machine-Translated BWE,Naïve,0.69902396,0.009518121,0.69902396
+GR,Greece,Substantive - Rights,Machine-Translated BWE,Naïve,0.6717932,0.020838056,0.6717932
+HR,Croatia,Substantive - Rights,Machine-Translated BWE,Naïve,0.5928131,0.01947938,0.5928131
+HU,Hungary,Substantive - Rights,Machine-Translated BWE,Naïve,0.5430159,0.018877888,0.5430159
+IS,Iceland,Substantive - Rights,Machine-Translated BWE,Naïve,0.68760866,0.06258347,0.68760866
+IT,Italy,Substantive - Rights,Machine-Translated BWE,Naïve,0.7608393,0.03786153,0.7608393
+LV,Latvia,Substantive - Rights,Machine-Translated BWE,Naïve,0.61714005,0.029762551,0.61714005
+NL,Netherlands,Substantive - Rights,Machine-Translated BWE,Naïve,0.6188918,0.008521942,0.6188918
+NO,Norway,Substantive - Rights,Machine-Translated BWE,Naïve,0.71393734,0.019747324,0.71393734
+PL,Poland,Substantive - Rights,Machine-Translated BWE,Naïve,0.58329225,0.013550424,0.58329225
+PT,Portugal,Substantive - Rights,Machine-Translated BWE,Naïve,0.66285104,0.0266793,0.66285104
+RS,Serbia,Substantive - Rights,Machine-Translated BWE,Naïve,0.6045094,0.013814559,0.6045094
+SE,Sweden,Substantive - Rights,Machine-Translated BWE,Naïve,0.7126631,0.011736064,0.7126631
+SI,Slovenia,Substantive - Rights,Machine-Translated BWE,Naïve,0.5748777,0.013737687,0.5748777
+TR,Turkey,Substantive - Rights,Machine-Translated BWE,Naïve,0.6857744,0.013826011,0.6857744
+UA,Ukraine,Substantive - Rights,Machine-Translated BWE,Naïve,0.6939145,0.02669834,0.6939145
+AT,Austria,Procedural - Judiciary,Aligned BWE,English,,,0
+BA,Bosnia and Herzegovina,Procedural - Judiciary,Aligned BWE,English,0.6848453,0.048713177,0.67352027
+BE,Belgium,Procedural - Judiciary,Aligned BWE,English,0.6613256,0.013611124,0.6159333
+BG,Bulgaria,Procedural - Judiciary,Aligned BWE,English,0.642312,0.02604713,0.62447006
+CZ,Czech Republic,Procedural - Judiciary,Aligned BWE,English,0.48751813,0.03655483,0.5461618
+DK,Denmark,Procedural - Judiciary,Aligned BWE,English,0.3476614,0.02263797,0.3476614
+EE,Estonia,Procedural - Judiciary,Aligned BWE,English,0.55088603,0.013226175,0.56527406
+ES,Spain,Procedural - Judiciary,Aligned BWE,English,0.69107264,0.028463202,0.6570031
+FI,Finland,Procedural - Judiciary,Aligned BWE,English,0.57206464,0.016426003,0.55443275
+FR,France,Procedural - Judiciary,Aligned BWE,English,0.51904535,0.020391762,0.49639156
+GB,Great Britain,Procedural - Judiciary,Aligned BWE,English,0.6876312,0.011294518,0.6876312
+GR,Greece,Procedural - Judiciary,Aligned BWE,English,0.6007831,0.018900711,0.58731884
+HR,Croatia,Procedural - Judiciary,Aligned BWE,English,0.6577335,0.022256333,0.60622394
+HU,Hungary,Procedural - Judiciary,Aligned BWE,English,0.64248407,0.020157712,0.64248407
+IS,Iceland,Procedural - Judiciary,Aligned BWE,English,,,0
+IT,Italy,Procedural - Judiciary,Aligned BWE,English,0.6344844,0.031128384,0.61394036
+LV,Latvia,Procedural - Judiciary,Aligned BWE,English,0.62870616,0.019132456,0.62870616
+NL,Netherlands,Procedural - Judiciary,Aligned BWE,English,0.57300925,0.01393278,0.5493396
+NO,Norway,Procedural - Judiciary,Aligned BWE,English,0.48663285,0.016075142,0.48663288
+PL,Poland,Procedural - Judiciary,Aligned BWE,English,0.5212542,0.019952519,0.5041702
+PT,Portugal,Procedural - Judiciary,Aligned BWE,English,0.5694939,0.016144935,0.53355336
+RS,Serbia,Procedural - Judiciary,Aligned BWE,English,0.7168413,0.017273314,0.68323934
+SE,Sweden,Procedural - Judiciary,Aligned BWE,English,0.57190853,0.015409718,0.5626519
+SI,Slovenia,Procedural - Judiciary,Aligned BWE,English,0.6408705,0.017919436,0.55307734
+TR,Turkey,Procedural - Judiciary,Aligned BWE,English,0.74214435,0.013930415,0.74078125
+UA,Ukraine,Procedural - Judiciary,Aligned BWE,English,0.6162788,0.020879108,0.6130763
+AT,Austria,Procedural - Rules,Aligned BWE,English,0.5726337,0.023399785,0.5726337
+BA,Bosnia and Herzegovina,Procedural - Rules,Aligned BWE,English,0.7194448,0.044254165,0.7194448
+BE,Belgium,Procedural - Rules,Aligned BWE,English,0.5255762,0.019844504,0.5255762
+BG,Bulgaria,Procedural - Rules,Aligned BWE,English,0.6049503,0.022208741,0.6049503
+CZ,Czech Republic,Procedural - Rules,Aligned BWE,English,0.58855134,0.023863403,0.58855134
+DK,Denmark,Procedural - Rules,Aligned BWE,English,0.46541855,0.021519052,0.46541855
+EE,Estonia,Procedural - Rules,Aligned BWE,English,0.5831827,0.022660615,0.5831827
+ES,Spain,Procedural - Rules,Aligned BWE,English,0.5316997,0.02422653,0.5328835
+FI,Finland,Procedural - Rules,Aligned BWE,English,0.60203445,0.023885444,0.60203445
+FR,France,Procedural - Rules,Aligned BWE,English,0.52101094,0.021910397,0.52101094
+GB,Great Britain,Procedural - Rules,Aligned BWE,English,0.45827922,0.009829398,0.45827922
+GR,Greece,Procedural - Rules,Aligned BWE,English,0.5830616,0.018452778,0.5830616
+HR,Croatia,Procedural - Rules,Aligned BWE,English,0.57800287,0.01439678,0.57800287
+HU,Hungary,Procedural - Rules,Aligned BWE,English,0.5383137,0.01852139,0.5383137
+IS,Iceland,Procedural - Rules,Aligned BWE,English,0.7753061,0.057401694,0.7753061
+IT,Italy,Procedural - Rules,Aligned BWE,English,0.61616474,0.041303392,0.61616474
+LV,Latvia,Procedural - Rules,Aligned BWE,English,0.60191524,0.027106468,0.60191524
+NL,Netherlands,Procedural - Rules,Aligned BWE,English,0.45931306,0.015919818,0.4600886
+NO,Norway,Procedural - Rules,Aligned BWE,English,0.55786854,0.030893153,0.55786854
+PL,Poland,Procedural - Rules,Aligned BWE,English,0.45535985,0.017920518,0.45535985
+PT,Portugal,Procedural - Rules,Aligned BWE,English,0.56046677,0.032869946,0.56046677
+RS,Serbia,Procedural - Rules,Aligned BWE,English,0.5929314,0.01723753,0.5929314
+SE,Sweden,Procedural - Rules,Aligned BWE,English,0.54582345,0.01989407,0.54582345
+SI,Slovenia,Procedural - Rules,Aligned BWE,English,0.54913336,0.01035866,0.54913336
+TR,Turkey,Procedural - Rules,Aligned BWE,English,0.59766424,0.012199044,0.5976642
+UA,Ukraine,Procedural - Rules,Aligned BWE,English,0.64910716,0.023855012,0.64910716
+AT,Austria,Substantive - Democracy,Aligned BWE,English,0.6607247,0.015531393,0.66072476
+BA,Bosnia and Herzegovina,Substantive - Democracy,Aligned BWE,English,0.6966068,0.041223876,0.6966068
+BE,Belgium,Substantive - Democracy,Aligned BWE,English,0.71903145,0.012863484,0.7190315
+BG,Bulgaria,Substantive - Democracy,Aligned BWE,English,0.70839876,0.014595563,0.70839876
+CZ,Czech Republic,Substantive - Democracy,Aligned BWE,English,0.5773162,0.019159172,0.5773162
+DK,Denmark,Substantive - Democracy,Aligned BWE,English,0.49675652,0.019589141,0.4967565
+EE,Estonia,Substantive - Democracy,Aligned BWE,English,0.65778744,0.014865815,0.65778744
+ES,Spain,Substantive - Democracy,Aligned BWE,English,0.68304706,0.013954047,0.68304706
+FI,Finland,Substantive - Democracy,Aligned BWE,English,0.7170428,0.022612555,0.7170428
+FR,France,Substantive - Democracy,Aligned BWE,English,0.5876699,0.016028741,0.5876699
+GB,Great Britain,Substantive - Democracy,Aligned BWE,English,0.64292604,0.009973899,0.64292604
+GR,Greece,Substantive - Democracy,Aligned BWE,English,0.5519573,0.017774949,0.5519573
+HR,Croatia,Substantive - Democracy,Aligned BWE,English,0.60502803,0.01617317,0.6050281
+HU,Hungary,Substantive - Democracy,Aligned BWE,English,0.67961514,0.010696404,0.67961514
+IS,Iceland,Substantive - Democracy,Aligned BWE,English,0.3638903,0.03168225,0.3638903
+IT,Italy,Substantive - Democracy,Aligned BWE,English,0.64937985,0.01942642,0.6493799
+LV,Latvia,Substantive - Democracy,Aligned BWE,English,0.74696773,0.025831956,0.7469676
+NL,Netherlands,Substantive - Democracy,Aligned BWE,English,0.716683,0.013280042,0.716683
+NO,Norway,Substantive - Democracy,Aligned BWE,English,0.7255284,0.021747781,0.72552836
+PL,Poland,Substantive - Democracy,Aligned BWE,English,0.5614278,0.009968907,0.5614278
+PT,Portugal,Substantive - Democracy,Aligned BWE,English,0.6525711,0.017847825,0.6525711
+RS,Serbia,Substantive - Democracy,Aligned BWE,English,0.5714041,0.013230513,0.5714041
+SE,Sweden,Substantive - Democracy,Aligned BWE,English,0.6368166,0.011329255,0.6368166
+SI,Slovenia,Substantive - Democracy,Aligned BWE,English,0.59845614,0.016193299,0.59845614
+TR,Turkey,Substantive - Democracy,Aligned BWE,English,0.56833494,0.017147696,0.56833494
+UA,Ukraine,Substantive - Democracy,Aligned BWE,English,0.70338863,0.029057633,0.70338863
+AT,Austria,Substantive - Rights,Aligned BWE,English,0.7287989,0.017309694,0.7287989
+BA,Bosnia and Herzegovina,Substantive - Rights,Aligned BWE,English,0.62479186,0.047231823,0.6247918
+BE,Belgium,Substantive - Rights,Aligned BWE,English,0.7034743,0.010721259,0.7034743
+BG,Bulgaria,Substantive - Rights,Aligned BWE,English,0.6632022,0.019930147,0.6632022
+CZ,Czech Republic,Substantive - Rights,Aligned BWE,English,0.6839778,0.024950653,0.6839778
+DK,Denmark,Substantive - Rights,Aligned BWE,English,0.68750787,0.017089693,0.6875078
+EE,Estonia,Substantive - Rights,Aligned BWE,English,0.67196846,0.015637374,0.67196846
+ES,Spain,Substantive - Rights,Aligned BWE,English,0.6256149,0.02548009,0.6256149
+FI,Finland,Substantive - Rights,Aligned BWE,English,0.6927601,0.01648616,0.6927601
+FR,France,Substantive - Rights,Aligned BWE,English,0.66903454,0.019976957,0.66903454
+GB,Great Britain,Substantive - Rights,Aligned BWE,English,0.69902396,0.009518121,0.69902396
+GR,Greece,Substantive - Rights,Aligned BWE,English,0.6717931,0.020838054,0.6717932
+HR,Croatia,Substantive - Rights,Aligned BWE,English,0.5928131,0.019479373,0.5928131
+HU,Hungary,Substantive - Rights,Aligned BWE,English,0.54301584,0.018877883,0.5430159
+IS,Iceland,Substantive - Rights,Aligned BWE,English,0.68760866,0.06258346,0.68760866
+IT,Italy,Substantive - Rights,Aligned BWE,English,0.76083934,0.037861515,0.7608393
+LV,Latvia,Substantive - Rights,Aligned BWE,English,0.61714005,0.029762538,0.61714005
+NL,Netherlands,Substantive - Rights,Aligned BWE,English,0.6188918,0.008521931,0.6188918
+NO,Norway,Substantive - Rights,Aligned BWE,English,0.71393734,0.019747315,0.71393734
+PL,Poland,Substantive - Rights,Aligned BWE,English,0.58329225,0.01355043,0.58329225
+PT,Portugal,Substantive - Rights,Aligned BWE,English,0.66285104,0.0266793,0.66285104
+RS,Serbia,Substantive - Rights,Aligned BWE,English,0.6045094,0.013814567,0.6045094
+SE,Sweden,Substantive - Rights,Aligned BWE,English,0.71266305,0.011736079,0.7126631
+SI,Slovenia,Substantive - Rights,Aligned BWE,English,0.5748777,0.013737687,0.5748777
+TR,Turkey,Substantive - Rights,Aligned BWE,English,0.6857744,0.01382602,0.6857744
+UA,Ukraine,Substantive - Rights,Aligned BWE,English,0.6939145,0.026698343,0.6939145
+DE,Germany,Procedural - Judiciary,Monolingual,German,0.7235286,0.023775853,0.7235286
+ES,Spain,Procedural - Judiciary,Monolingual,Spanish,0.6946938,0.028319733,0.6570031
+FR,France,Procedural - Judiciary,Monolingual,French,0.45039612,0.020307055,0.49639156
+GB,Great Britain,Procedural - Judiciary,Monolingual,English,0.68823975,0.012333602,0.6876312
+HU,Hungary,Procedural - Judiciary,Monolingual,Hungarian,0.66160357,0.029845353,0.64248407
+IT,Italy,Procedural - Judiciary,Monolingual,Italian,0.5489501,0.033467438,0.61394036
+NL,Netherlands,Procedural - Judiciary,Monolingual,Dutch,0.547364,0.011408381,0.5493396
+PL,Poland,Procedural - Judiciary,Monolingual,Polish,0.76278687,0.032161538,0.5041702
+DE,Germany,Procedural - Rules,Monolingual,German,0.6175592,0.025122894,0.6175592
+ES,Spain,Procedural - Rules,Monolingual,Spanish,0.5090971,0.026594436,0.5328835
+FR,France,Procedural - Rules,Monolingual,French,0.5039116,0.024988282,0.52101094
+GB,Great Britain,Procedural - Rules,Monolingual,English,0.45973247,0.00852058,0.45827922
+HU,Hungary,Procedural - Rules,Monolingual,Hungarian,0.61645436,0.04013199,0.5383137
+IT,Italy,Procedural - Rules,Monolingual,Italian,0.55940384,0.037382882,0.61616474
+NL,Netherlands,Procedural - Rules,Monolingual,Dutch,0.5154871,0.019676203,0.4600886
+PL,Poland,Procedural - Rules,Monolingual,Polish,0.5901735,0.035451043,0.45535985
+DE,Germany,Substantive - Democracy,Monolingual,German,0.7278786,0.028981145,0.7278786
+ES,Spain,Substantive - Democracy,Monolingual,Spanish,0.7218028,0.021807939,0.68304706
+FR,France,Substantive - Democracy,Monolingual,French,0.62470216,0.012339285,0.5876699
+GB,Great Britain,Substantive - Democracy,Monolingual,English,0.6469344,0.012182,0.64292604
+HU,Hungary,Substantive - Democracy,Monolingual,Hungarian,0.7755067,0.011670895,0.67961514
+IT,Italy,Substantive - Democracy,Monolingual,Italian,0.60846114,0.020816594,0.6493799
+NL,Netherlands,Substantive - Democracy,Monolingual,Dutch,0.65352285,0.011485482,0.716683
+PL,Poland,Substantive - Democracy,Monolingual,Polish,0.7101829,0.03418426,0.5614278
+DE,Germany,Substantive - Rights,Monolingual,German,0.8021026,0.03007893,0.8021026
+ES,Spain,Substantive - Rights,Monolingual,Spanish,0.63196176,0.029358516,0.6256149
+FR,France,Substantive - Rights,Monolingual,French,0.64614177,0.020423552,0.66903454
+GB,Great Britain,Substantive - Rights,Monolingual,English,0.7011909,0.00880217,0.69902396
+HU,Hungary,Substantive - Rights,Monolingual,Hungarian,0.6272058,0.03341076,0.5430159
+IT,Italy,Substantive - Rights,Monolingual,Italian,0.6794175,0.034053996,0.7608393
+NL,Netherlands,Substantive - Rights,Monolingual,Dutch,0.6535999,0.010770122,0.6188918
+PL,Poland,Substantive - Rights,Monolingual,Polish,0.7337052,0.031836916,0.58329225
