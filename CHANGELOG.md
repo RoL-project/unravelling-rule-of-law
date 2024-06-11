@@ -11,6 +11,7 @@ All notable changes to "Unravelling the Rule of Law Shiny App" will be documente
 - Repository status badge.
 - GNU GPLv3 license on GitHub repository.
 - License CC BY-NC-ND 4.0 on GitHub repository.
+- Grey plots for paper.
 ### Changed
 - Repository from github.com/bgonzalezbustamante to github.com/RoL-project.
 - Shiny app code.
