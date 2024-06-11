@@ -7,10 +7,10 @@ All notable changes to "Unravelling the Rule of Law Shiny App" will be documente
 
 ## [1.0.0] - 2024-06-11
 ### Added
-- Badges in SVG on GitHub repository (WIP new repository).
-- Repository status badge (WIP new repository).
-- GNU GPLv3 license on GitHub repository (WIP new repository).
-- License CC BY-NC-ND 4.0 on GitHub repository (WIP new repository).
+- Badges in SVG on GitHub repository.
+- Repository status badge.
+- GNU GPLv3 license on GitHub repository.
+- License CC BY-NC-ND 4.0 on GitHub repository.
 ### Changed
 - Repository from github.com/bgonzalezbustamante to github.com/RoL-project.
 - Shiny app code.
