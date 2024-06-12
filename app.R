@@ -2,7 +2,7 @@
 ## Faculty of Governance and Global Affairs, Leiden University
 ## May-June 2024
 
-## Load packages
+## Packages
 library(shiny)
 library(shinythemes)
 library(ggplot2)
@@ -125,6 +125,33 @@ ui <- fluidPage(theme = shinytheme("flatly"), tags$head(tags$script(src = "https
                                      ))
                           ),
                           
+                          tabPanel("Proof of Concept",
+                                   fluidPage(
+                                     titlePanel("Proof of Concept"),
+                                     sidebarLayout(
+                                       sidebarPanel(
+                                         tags$p(HTML("<b>Pre-processing:</b>")),
+                                         tags$p(HTML("<ul><li>Tokenization</li><li>Standard cleaning</li><li>Key multiword collocations*</li></ul>")),
+                                         tags$p(HTML("<b>word2vec parameters:</b>")),
+                                         tags$p(HTML("<ul><li>Skim-gram with negative sampling</li><li>Training window size of 10</li><li>Vectors of 300 dimensions</li><li>Five epochs and bootstrapping of 30</li><li>Pruning low freq. and noisy words</li><li>Cython and 12-cores</li></ul>")),
+                                         tags$p(HTML("<b>Monolingual word2vec implementations:</b>")),
+                                         tags$p(HTML("<ul><li>Monolingual embeddings <small>(original languages)</small></li></ul>")),
+                                         tags$p(HTML("<b>Bilingual Word Embeddings (BWEs) pivot implementations:</b>")),
+                                         tags$p(HTML("<ul><li>Machine-translated BWE models</li><li>Procrustes-aligned BWE <small>(English as an anchor)</small></li></ul>")),
+                                         tags$p(HTML("<b>RoBERTa implementations:</b>")),
+                                         tags$p(HTML("<ul><li><b>To be determined</b></li></ul>")),
+                                         selectInput("country5", "Country:", 
+                                                     choices = c("Germany" = "proof_germany", "Spain" = "proof_spain", "France" = "proof_france", "Great Britain" = "proof_uk",
+                                                                 "Hungary" = "proof_hungary", "Italy" = "proof_italy", "Netherlands" = "proof_netherlands", "Poland" = "proof_poland")),
+                                         checkboxInput("sameAxis5", "Standardise axis (from zero to one)", value = FALSE),
+                                         downloadButton("downloadPlot5", "Download Plot"),
+                                         tags$p(HTML("<br><small>* word2vec implementations only</small>"))
+                                       ),
+                                       mainPanel(plotOutput("proofConcept", height = "768px", width = "1024px"),
+                                                 tags$p(HTML("<small><em>Note.</em> The original language corpora were processed with specific Spanish, French, Italian, Dutch, and Polish tokenizers. Hungarian was processed using a generic multilingual tokenizer. The monolingual models' recodification list is 109 multiword collocations, while the BWE and MWE machine-translated consisted of 222 changes since they incorporated some typos corrections. For the original languages, that was not possible since the list of recodifications was translated with OPUS-MT transformers for each language, and typo correction could have affected the translation. Therefore, the machine-translated BWE for Great Britain is not only equivalent to the English-aligned embeddings but also to the monolingual ones but with a different number of multiword recodifications during pre-processing.</small>")))
+                                     ))
+                          ),
+                          
                           tabPanel("About",
                                    fluidPage(
                                      h2("Unravelling the Rule of Law: A Machine Learning Approach"),
@@ -135,9 +162,11 @@ ui <- fluidPage(theme = shinytheme("flatly"), tags$head(tags$script(src = "https
                                      p(HTML("<ul><li>Demonstrate how the meaning of the rule of law has changed over time;</ul></li>")),
                                      p(HTML("<ul><li>Whether the understanding of the rule of law concept differs across jurisdictions;</ul></li>")),
                                      p(HTML("<ul><li>Provide a novel way for creating the rule of law indicators.</ul></li>"))
-                                     )
-                                   )),
-                tags$footer(tags$p(HTML("<br><br>")), tags$img(src = "fgga.png", width = "150px", alt = "Leiden"), 
+                                     )),
+                          ),
+                
+                tags$footer(tags$p(HTML("<br><br>")), tags$img(src = "fgga.png", width = "150px", alt = "Leiden"), ## HTML("<br>"),
+                            tags$i(class = "fa-brands fa-square-github"), tags$a(href = "https://github.com/RoL-project/unravelling-rule-of-law", "GitHub repository"),
                             tags$p(tags$i(class = "fa-brands fa-creative-commons"), "2024 Jaroslaw Kantorowicz and Bastián González-Bustamante"))
                 )
 
@@ -147,6 +176,7 @@ server <- function(input, output) {
   ## Load and process data
   data <- read.csv("data/tidy/summary_UK_US.csv", sep = ",", encoding = "UTF-8")
   parlamint <- read.csv("data/tidy/summary_estimates_ParlaMint.csv", sep = ",", encoding = "UTF-8")
+  proof_of_concept <- read.csv("data/tidy/summary_proof_of_concept.csv", sep = ",", encoding = "UTF-8")
   bootstrap <- 30
   data$model <- ifelse(data$model == "ct", "Chronologically Trained Model",
                        ifelse(data$model == "naive", "Naive Time Model",
@@ -161,6 +191,9 @@ server <- function(input, output) {
   parlamint$se <- parlamint$std / sqrt(bootstrap)
   parlamint$lower_ci <- parlamint$cosine - 1.96 * parlamint$se
   parlamint$upper_ci <- parlamint$cosine + 1.96 * parlamint$se
+  proof_of_concept$se <- proof_of_concept$std / sqrt(bootstrap)
+  proof_of_concept$lower_ci <- proof_of_concept$cosine - 1.96 * proof_of_concept$se
+  proof_of_concept$upper_ci <- proof_of_concept$cosine + 1.96 * proof_of_concept$se
   
   ## Create subsets of UK-US data
   ct <- filter(data, model == "Chronologically Trained Model")
@@ -189,7 +222,18 @@ server <- function(input, output) {
   democracy_parlamint <- filter(parlamint, cluster == "Substantive - Democracy")
   rights_parlamint <- filter(parlamint, cluster == "Substantive - Rights")
   
-  ## Render diachronic plot based on user input
+  ## Create subsets of proof of concept
+  proof_germany <- filter(proof_of_concept, country == "Germany")
+  proof_spain <- filter(proof_of_concept, country == "Spain")
+  proof_france <- filter(proof_of_concept, country == "France")
+  proof_uk <- filter(proof_of_concept, country == "Great Britain")
+  proof_hungary <- filter(proof_of_concept, country == "Hungary")
+  proof_italy <- filter(proof_of_concept, country == "Italy")
+  proof_netherlands <- filter(proof_of_concept, country == "Netherlands")
+  proof_poland <- filter(proof_of_concept, country == "Poland")
+  
+  ## Diachronic Cluster 
+  ## Render based on user input
   output$diachronicClusters <- renderPlot({
     selected_data <- get(input$model1)
     
@@ -225,7 +269,8 @@ server <- function(input, output) {
     }
   )
   
-  ## Render models comparison plot based on user input
+  ## Models Comparison
+  ## Render plot based on user input
   output$diachronicModels <- renderPlot({
     selected_models <- get(input$cluster2)
     
@@ -261,7 +306,8 @@ server <- function(input, output) {
     }
   )
   
-  ## Render cross-national plot based on user input
+  ## Country Clusters
+  ## Render plot based on user input
   output$parlamintClusters <- renderPlot({
     selected_parlamint_data <- get(input$country3)
     
@@ -296,8 +342,8 @@ server <- function(input, output) {
     }
   )
   
-
-  ## Render multilingual plot based on user input
+  ## Cross-National Models
+  ## Renderplot based on user input
   output$multilingualPlot <- renderPlot({
     selected_parlamint <- get(input$cluster4)
     
@@ -332,6 +378,42 @@ server <- function(input, output) {
   output$downloadPlot4 <- downloadHandler(
     filename = function() {
       paste0("plot-", input$cluster4, "-", Sys.Date(), ".png")
+    },
+    content = function(file) {
+      ggsave(file, plot = last_plot(), device = "png")
+    }
+  )
+  
+  ## Proof of Concept
+  ## Render plot based on user input
+  output$proofConcept <- renderPlot({
+    selected_proof_data <- get(input$country5)
+    
+    filtered_proof_data <- selected_proof_data
+    
+    p5 <- ggplot(aes(x = cosine, y= factor(concept, levels = rev(levels(factor(concept)))),
+                     color = model, group = model), data = filtered_proof_data) +
+      geom_errorbar(aes(xmin = lower_ci, xmax = upper_ci), width = .2, position = position_dodge(0.3)) +
+      geom_point(shape = 18, size = 1.5, position = position_dodge(0.3)) + 
+      scale_color_manual(name = "Model", values = c("#8da0cb", "#fc8d62", "gray40")) +
+      theme_minimal(base_size = 12) + theme(legend.position = "bottom") +
+      theme(panel.grid.minor = element_blank()) +
+      theme(plot.margin = unit(c(0.5,0.5,0.5,0.5), "cm")) +
+      labs(y = NULL, x = "Cosine", title = paste("Rule of Law in", unique(filtered_proof_data$country)), subtitle = "Proof of Concept", caption = NULL)
+    
+    ## Same Axis
+    if (input$sameAxis5) {
+      p5 <- p5 + scale_x_continuous(lim = c(0, 1))
+    }
+    
+    p5
+    
+  }, res = 120)
+  
+  ## Define the download handler
+  output$downloadPlot5 <- downloadHandler(
+    filename = function() {
+      paste0("plot-", input$country5, "-", Sys.Date(), ".png")
     },
     content = function(file) {
       ggsave(file, plot = last_plot(), device = "png")
