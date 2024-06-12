@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+authors:
+- family-names: "Kantorowicz"
+  given-names: "Jaroslaw"
+  orcid: "https://orcid.org/0000-0002-1186-5427"
+- family-names: "González-Bustamante"
+  given-names: "Bastián"
+  orcid: "https://orcid.org/0000-0003-1510-6820"
+title: "Shiny App Unravelling the Rule of Law Project"
+version: "1.1.0"
+doi:
+date-released: 2024-06-12
+url: "https://github.com/RoL-project/unravelling-rule-of-law"
+type: software-code
