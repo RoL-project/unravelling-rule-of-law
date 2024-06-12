@@ -165,7 +165,7 @@ ui <- fluidPage(theme = shinytheme("flatly"), tags$head(tags$script(src = "https
                                      )),
                           ),
                 
-                tags$footer(tags$p(HTML("<br><br>")), tags$img(src = "fgga.png", width = "150px", alt = "Leiden"), HTML("<br>"),
+                tags$footer(tags$p(HTML("<br><br>")), tags$img(src = "fgga.png", width = "150px", alt = "Leiden"), HTML("<br><br>"),
                             tags$i(class = "fa-brands fa-github"), tags$a(href = "https://github.com/RoL-project/unravelling-rule-of-law", "GitHub repository"),
                             tags$p(tags$i(class = "fa-brands fa-creative-commons"), "2024 Jaroslaw Kantorowicz and Bastián González-Bustamante"))
                 )
