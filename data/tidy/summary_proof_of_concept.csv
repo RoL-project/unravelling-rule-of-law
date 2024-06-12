@@ -1,0 +1,169 @@
+﻿code,country,concept,model,anchor,cosine,std
+DE,Germany,accountability,Machine-Translated BWE,Naïve,,
+ES,Spain,accountability,Machine-Translated BWE,Naïve,0.4205115,0.030476017
+FR,France,accountability,Machine-Translated BWE,Naïve,0.3023546,0.027662179
+GB,Great Britain,accountability,Machine-Translated BWE,Naïve,0.44667205,0.014211405
+HU,Hungary,accountability,Machine-Translated BWE,Naïve,0.44947866,0.026010312
+IT,Italy,accountability,Machine-Translated BWE,Naïve,0.59768987,0.048493307
+NL,Netherlands,accountability,Machine-Translated BWE,Naïve,0.3572688,0.02032094
+PL,Poland,accountability,Machine-Translated BWE,Naïve,0.34454,0.017593544
+DE,Germany,corruption,Machine-Translated BWE,Naïve,,
+ES,Spain,corruption,Machine-Translated BWE,Naïve,0.33949253,0.023124896
+FR,France,corruption,Machine-Translated BWE,Naïve,0.33078822,0.026218206
+GB,Great Britain,corruption,Machine-Translated BWE,Naïve,0.4152185,0.014381677
+HU,Hungary,corruption,Machine-Translated BWE,Naïve,0.4543559,0.021853669
+IT,Italy,corruption,Machine-Translated BWE,Naïve,0.37048241,0.028018685
+NL,Netherlands,corruption,Machine-Translated BWE,Naïve,0.46626273,0.015990416
+PL,Poland,corruption,Machine-Translated BWE,Naïve,0.23210697,0.021748437
+DE,Germany,open_government,Machine-Translated BWE,Naïve,,
+ES,Spain,open_government,Machine-Translated BWE,Naïve,0.44258034,0.035315443
+FR,France,open_government,Machine-Translated BWE,Naïve,0.22815706,0.0240996
+GB,Great Britain,open_government,Machine-Translated BWE,Naïve,0.41855767,0.02570801
+HU,Hungary,open_government,Machine-Translated BWE,Naïve,0.4085379,0.027418861
+IT,Italy,open_government,Machine-Translated BWE,Naïve,0.2979669,0.033396684
+NL,Netherlands,open_government,Machine-Translated BWE,Naïve,0.26693287,0.03034237
+PL,Poland,open_government,Machine-Translated BWE,Naïve,0.333905,0.022368569
+DE,Germany,human_rights,Machine-Translated BWE,Naïve,,
+ES,Spain,human_rights,Machine-Translated BWE,Naïve,0.4982775,0.026963117
+FR,France,human_rights,Machine-Translated BWE,Naïve,0.5332447,0.015881855
+GB,Great Britain,human_rights,Machine-Translated BWE,Naïve,0.59851366,0.013409144
+HU,Hungary,human_rights,Machine-Translated BWE,Naïve,0.5625789,0.018511357
+IT,Italy,human_rights,Machine-Translated BWE,Naïve,0.6151709,0.025894515
+NL,Netherlands,human_rights,Machine-Translated BWE,Naïve,0.50743634,0.012770988
+PL,Poland,human_rights,Machine-Translated BWE,Naïve,0.7213735,0.012545552
+DE,Germany,security,Machine-Translated BWE,Naïve,,
+ES,Spain,security,Machine-Translated BWE,Naïve,0.36183354,0.01823235
+FR,France,security,Machine-Translated BWE,Naïve,0.3479269,0.015073566
+GB,Great Britain,security,Machine-Translated BWE,Naïve,0.31413734,0.014591682
+HU,Hungary,security,Machine-Translated BWE,Naïve,0.26135164,0.01721688
+IT,Italy,security,Machine-Translated BWE,Naïve,0.41629916,0.033563804
+NL,Netherlands,security,Machine-Translated BWE,Naïve,0.33045,0.018814947
+PL,Poland,security,Machine-Translated BWE,Naïve,0.2915341,0.022770742
+DE,Germany,regulations,Machine-Translated BWE,Naïve,,
+ES,Spain,regulations,Machine-Translated BWE,Naïve,0.28491768,0.030251453
+FR,France,regulations,Machine-Translated BWE,Naïve,0.34422484,0.030684754
+GB,Great Britain,regulations,Machine-Translated BWE,Naïve,0.18670258,0.01650669
+HU,Hungary,regulations,Machine-Translated BWE,Naïve,0.31300777,0.03249557
+IT,Italy,regulations,Machine-Translated BWE,Naïve,0.3659403,0.033028003
+NL,Netherlands,regulations,Machine-Translated BWE,Naïve,0.26813608,0.020589758
+PL,Poland,regulations,Machine-Translated BWE,Naïve,0.20238973,0.021200212
+DE,Germany,judicial_independence,Machine-Translated BWE,Naïve,,
+ES,Spain,judicial_independence,Machine-Translated BWE,Naïve,0.696669,0.030192478
+FR,France,judicial_independence,Machine-Translated BWE,Naïve,0.566924,0.03201128
+GB,Great Britain,judicial_independence,Machine-Translated BWE,Naïve,0.73077613,0.013874172
+HU,Hungary,judicial_independence,Machine-Translated BWE,Naïve,0.67720765,0.02346643
+IT,Italy,judicial_independence,Machine-Translated BWE,Naïve,0.6580286,0.04229863
+NL,Netherlands,judicial_independence,Machine-Translated BWE,Naïve,0.6698101,0.014469256
+PL,Poland,judicial_independence,Machine-Translated BWE,Naïve,0.58903825,0.017951902
+DE,Germany,accountability,Aligned BWE,English,,
+ES,Spain,accountability,Aligned BWE,English,0.42051142,0.030476013
+FR,France,accountability,Aligned BWE,English,0.3023546,0.027662179
+GB,Great Britain,accountability,Aligned BWE,English,0.44667205,0.014211405
+HU,Hungary,accountability,Aligned BWE,English,0.44947866,0.02601031
+IT,Italy,accountability,Aligned BWE,English,0.59768987,0.048493307
+NL,Netherlands,accountability,Aligned BWE,English,0.35726884,0.020320943
+PL,Poland,accountability,Aligned BWE,English,0.34453997,0.01759354
+DE,Germany,corruption,Aligned BWE,English,,
+ES,Spain,corruption,Aligned BWE,English,0.33949253,0.0231249
+FR,France,corruption,Aligned BWE,English,0.33078822,0.026218204
+GB,Great Britain,corruption,Aligned BWE,English,0.4152185,0.014381677
+HU,Hungary,corruption,Aligned BWE,English,0.45435584,0.021853663
+IT,Italy,corruption,Aligned BWE,English,0.37048244,0.028018694
+NL,Netherlands,corruption,Aligned BWE,English,0.46626273,0.015990408
+PL,Poland,corruption,Aligned BWE,English,0.23210695,0.021748448
+DE,Germany,open_government,Aligned BWE,English,,
+ES,Spain,open_government,Aligned BWE,English,0.44258034,0.03531544
+FR,France,open_government,Aligned BWE,English,0.22815706,0.024099596
+GB,Great Britain,open_government,Aligned BWE,English,0.41855767,0.02570801
+HU,Hungary,open_government,Aligned BWE,English,0.4085379,0.027418854
+IT,Italy,open_government,Aligned BWE,English,0.2979669,0.03339668
+NL,Netherlands,open_government,Aligned BWE,English,0.26693287,0.03034237
+PL,Poland,open_government,Aligned BWE,English,0.333905,0.02236857
+DE,Germany,human_rights,Aligned BWE,English,,
+ES,Spain,human_rights,Aligned BWE,English,0.4982775,0.026963111
+FR,France,human_rights,Aligned BWE,English,0.5332447,0.015881851
+GB,Great Britain,human_rights,Aligned BWE,English,0.59851366,0.013409144
+HU,Hungary,human_rights,Aligned BWE,English,0.5625789,0.018511364
+IT,Italy,human_rights,Aligned BWE,English,0.6151709,0.025894513
+NL,Netherlands,human_rights,Aligned BWE,English,0.50743634,0.012770985
+PL,Poland,human_rights,Aligned BWE,English,0.72137344,0.012545553
+DE,Germany,security,Aligned BWE,English,,
+ES,Spain,security,Aligned BWE,English,0.36183354,0.018232351
+FR,France,security,Aligned BWE,English,0.3479269,0.015073563
+GB,Great Britain,security,Aligned BWE,English,0.31413734,0.014591682
+HU,Hungary,security,Aligned BWE,English,0.26135164,0.017216884
+IT,Italy,security,Aligned BWE,English,0.41629916,0.033563808
+NL,Netherlands,security,Aligned BWE,English,0.33045,0.018814944
+PL,Poland,security,Aligned BWE,English,0.2915341,0.022770736
+DE,Germany,regulations,Aligned BWE,English,,
+ES,Spain,regulations,Aligned BWE,English,0.2849177,0.030251445
+FR,France,regulations,Aligned BWE,English,0.34422484,0.030684752
+GB,Great Britain,regulations,Aligned BWE,English,0.18670258,0.01650669
+HU,Hungary,regulations,Aligned BWE,English,0.31300777,0.032495562
+IT,Italy,regulations,Aligned BWE,English,0.36594027,0.03302801
+NL,Netherlands,regulations,Aligned BWE,English,0.26813608,0.02058976
+PL,Poland,regulations,Aligned BWE,English,0.20238973,0.021200212
+DE,Germany,judicial_independence,Aligned BWE,English,,
+ES,Spain,judicial_independence,Aligned BWE,English,0.696669,0.030192481
+FR,France,judicial_independence,Aligned BWE,English,0.566924,0.032011278
+GB,Great Britain,judicial_independence,Aligned BWE,English,0.73077613,0.013874172
+HU,Hungary,judicial_independence,Aligned BWE,English,0.67720765,0.023466425
+IT,Italy,judicial_independence,Aligned BWE,English,0.6580286,0.042298626
+NL,Netherlands,judicial_independence,Aligned BWE,English,0.6698101,0.014469247
+PL,Poland,judicial_independence,Aligned BWE,English,0.58903825,0.017951885
+DE,Germany,accountability,Monolingual,German,0.5412995,0.03587542
+ES,Spain,accountability,Monolingual,Spanish,0.30502328,0.022742094
+FR,France,accountability,Monolingual,French,0.26743492,0.02109258
+GB,Great Britain,accountability,Monolingual,English,0.45072284,0.01356906
+HU,Hungary,accountability,Monolingual,Hungarian,0.5312068,0.028858628
+IT,Italy,accountability,Monolingual,Italian,0.3263927,0.031201206
+NL,Netherlands,accountability,Monolingual,Dutch,0.29758978,0.020171259
+PL,Poland,accountability,Monolingual,Polish,0.35914037,0.024923481
+DE,Germany,corruption,Monolingual,German,0.5895306,0.023488266
+ES,Spain,corruption,Monolingual,Spanish,0.34544975,0.026966652
+FR,France,corruption,Monolingual,French,0.3429068,0.026883133
+GB,Great Britain,corruption,Monolingual,English,0.42553857,0.01588994
+HU,Hungary,corruption,Monolingual,Hungarian,0.5270286,0.031175748
+IT,Italy,corruption,Monolingual,Italian,0.32082695,0.019815102
+NL,Netherlands,corruption,Monolingual,Dutch,0.50496507,0.019971898
+PL,Poland,corruption,Monolingual,Polish,0.6002476,0.044475228
+DE,Germany,open_government,Monolingual,German,0.5590152,0.039003834
+ES,Spain,open_government,Monolingual,Spanish,0.45568937,0.0446783
+FR,France,open_government,Monolingual,French,0.22372174,0.020654362
+GB,Great Britain,open_government,Monolingual,English,0.4221934,0.02293121
+HU,Hungary,open_government,Monolingual,Hungarian,0.3614826,0.035153735
+IT,Italy,open_government,Monolingual,Italian,0.40499276,0.028282799
+NL,Netherlands,open_government,Monolingual,Dutch,0.2862835,0.02380771
+PL,Poland,open_government,Monolingual,Polish,0.40134335,0.03515244
+DE,Germany,human_rights,Monolingual,German,0.73692244,0.023280676
+ES,Spain,human_rights,Monolingual,Spanish,0.52549267,0.02873098
+FR,France,human_rights,Monolingual,French,0.44822058,0.016201682
+GB,Great Britain,human_rights,Monolingual,English,0.5999327,0.012458977
+HU,Hungary,human_rights,Monolingual,Hungarian,0.5984484,0.042310756
+IT,Italy,human_rights,Monolingual,Italian,0.606817,0.03931346
+NL,Netherlands,human_rights,Monolingual,Dutch,0.62786996,0.015609455
+PL,Poland,human_rights,Monolingual,Polish,0.7543084,0.03538032
+DE,Germany,security,Monolingual,German,0.5001748,0.030343542
+ES,Spain,security,Monolingual,Spanish,0.3465483,0.016631542
+FR,France,security,Monolingual,French,0.30186683,0.019134179
+GB,Great Britain,security,Monolingual,English,0.3101314,0.015675623
+HU,Hungary,security,Monolingual,Hungarian,0.49835145,0.04100445
+IT,Italy,security,Monolingual,Italian,0.36929303,0.024686262
+NL,Netherlands,security,Monolingual,Dutch,0.34670305,0.028845401
+PL,Poland,security,Monolingual,Polish,0.42466876,0.024991862
+DE,Germany,regulations,Monolingual,German,0.3977078,0.04364206
+ES,Spain,regulations,Monolingual,Spanish,0.29581448,0.025808863
+FR,France,regulations,Monolingual,French,0.3499078,0.03205766
+GB,Great Britain,regulations,Monolingual,English,0.19110683,0.021047197
+HU,Hungary,regulations,Monolingual,Hungarian,0.40885082,0.042784277
+IT,Italy,regulations,Monolingual,Italian,0.3692879,0.03563629
+NL,Netherlands,regulations,Monolingual,Dutch,0.3095306,0.040100567
+PL,Poland,regulations,Monolingual,Polish,0.33487338,0.024671096
+DE,Germany,judicial_independence,Monolingual,German,0.7652798,0.03446282
+ES,Spain,judicial_independence,Monolingual,Spanish,0.6946938,0.028319733
+FR,France,judicial_independence,Monolingual,French,0.42889592,0.029919753
+GB,Great Britain,judicial_independence,Monolingual,English,0.7322854,0.017215982
+HU,Hungary,judicial_independence,Monolingual,Hungarian,0.68806934,0.034248833
+IT,Italy,judicial_independence,Monolingual,Italian,0.6205762,0.040298544
+NL,Netherlands,judicial_independence,Monolingual,Dutch,0.60384834,0.016642503
+PL,Poland,judicial_independence,Monolingual,Polish,0.76278687,0.032161538
