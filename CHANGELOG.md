@@ -5,6 +5,13 @@ All notable changes to "Unravelling the Rule of Law Shiny App" will be documente
 
 ## [Released]
 
+## [1.1.0] - 2024-06-12
+### Added
+- Proof of concept estimates.
+- Citation CFF file.
+### Changed
+- Shiny app code.
+
 ## [1.0.0] - 2024-06-11
 ### Added
 - Badges in SVG on GitHub repository.
