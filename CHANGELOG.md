@@ -5,6 +5,11 @@ All notable changes to "Unravelling the Rule of Law Shiny App" will be documente
 
 ## [Released]
 
+## [1.1.1] - 2024-06-16
+### Changed
+- Grey plots for paper.
+- Minor corrections.
+
 ## [1.1.0] - 2024-06-12
 ### Added
 - Proof of concept estimates.
