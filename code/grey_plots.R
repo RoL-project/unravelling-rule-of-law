@@ -174,7 +174,7 @@ pdf("results/grey_plots/A6_CT_UK.pdf", width = 6.826666666666667, height = 5.12)
 png("results/grey_plots/A6_CT_UK.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 ggplot(aes(x = period, y = cosine, color = cluster, group = cluster), 
        data = subset(data, model == "Chronologically Trained Model" & country == "UK"
-                     & (cluster == "Corruption" | cluster == "Procedural - Judiciary (ext)" | cluster == "Procedural - Rules (ext)" | cluster == "Substantive - Democracy (ext)"))) +
+                     & (cluster == "Substantive - Rights" | cluster == "Procedural - Judiciary (ext)" | cluster == "Procedural - Rules (ext)" | cluster == "Substantive - Democracy (ext)"))) +
   geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
   geom_point(aes(shape = cluster), size = 1.5, position = position_dodge(0.3)) + 
   geom_line(aes(color = cluster, linetype = cluster), position = position_dodge(0.3), size = 0.5) +
@@ -195,7 +195,7 @@ pdf("results/grey_plots/A7_CT_US.pdf", width = 6.826666666666667, height = 5.12)
 png("results/grey_plots/A7_CT_US.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 ggplot(aes(x = period, y = cosine, color = cluster, group = cluster), 
        data = subset(data, model == "Chronologically Trained Model" & country == "US"
-                     & (cluster == "Corruption" | cluster == "Procedural - Judiciary (ext)" | cluster == "Procedural - Rules (ext)" | cluster == "Substantive - Democracy (ext)"))) +
+                     & (cluster == "Substantive - Rights" | cluster == "Procedural - Judiciary (ext)" | cluster == "Procedural - Rules (ext)" | cluster == "Substantive - Democracy (ext)"))) +
   geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
   geom_point(aes(shape = cluster), size = 1.5, position = position_dodge(0.3)) + 
   geom_line(aes(color = cluster, linetype = cluster), position = position_dodge(0.3), size = 0.5) +
@@ -216,7 +216,7 @@ pdf("results/grey_plots/A8_CT_full_US.pdf", width = 6.826666666666667, height = 
 png("results/grey_plots/A8_CT_full_US.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 ggplot(aes(x = period, y = cosine, color = cluster, group = cluster), 
        data = subset(data, model == "Chronologically Trained Model" & country == "US_full"
-                     & (cluster == "Corruption" | cluster == "Procedural - Judiciary (ext)" | cluster == "Procedural - Rules (ext)" | cluster == "Substantive - Democracy (ext)"))) +
+                     & (cluster == "Substantive - Rights" | cluster == "Procedural - Judiciary (ext)" | cluster == "Procedural - Rules (ext)" | cluster == "Substantive - Democracy (ext)"))) +
   geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
   geom_point(aes(shape = cluster), size = 1.5, position = position_dodge(0.3)) + 
   geom_line(aes(color = cluster, linetype = cluster), position = position_dodge(0.3), size = 0.5) +
