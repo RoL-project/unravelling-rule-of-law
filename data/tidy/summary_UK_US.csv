@@ -167,3 +167,91 @@ US_full,1925-1949,Substantive - Rights,ct-alt,0.476704,0.01613388
 US_full,1950-1974,Substantive - Rights,ct-alt,0.42028302,0.0170325
 US_full,1975-1999,Substantive - Rights,ct-alt,0.39593112,0.0194595
 US_full,2000-2024,Substantive - Rights,ct-alt,0.38070977,0.01870257
+UK,1800-1849,Corruption,ct,0.35420138,0.014361722
+UK,1850-1874,Corruption,ct,0.35109538,0.01401875
+UK,1875-1899,Corruption,ct,0.34511903,0.015329454
+UK,1900-1924,Corruption,ct,0.33945265,0.015098701
+UK,1925-1949,Corruption,ct,0.32739717,0.02004659
+UK,1950-1974,Corruption,ct,0.3139586,0.019497752
+UK,1975-1999,Corruption,ct,0.3022234,0.020059304
+UK,2000-2024,Corruption,ct,0.2911807,0.022524958
+UK,1800-1849,Procedural - Judiciary (ext),ct,0.61249834,0.005789189
+UK,1850-1874,Procedural - Judiciary (ext),ct,0.61048096,0.009480033
+UK,1875-1899,Procedural - Judiciary (ext),ct,0.6028054,0.013568537
+UK,1900-1924,Procedural - Judiciary (ext),ct,0.59257954,0.01635513
+UK,1925-1949,Procedural - Judiciary (ext),ct,0.5761182,0.01621562
+UK,1950-1974,Procedural - Judiciary (ext),ct,0.5531494,0.017813453
+UK,1975-1999,Procedural - Judiciary (ext),ct,0.53526986,0.018876545
+UK,2000-2024,Procedural - Judiciary (ext),ct,0.516042,0.022860741
+UK,1800-1849,Procedural - Rules (ext),ct,0.545633,0.009879344
+UK,1850-1874,Procedural - Rules (ext),ct,0.54931545,0.013872265
+UK,1875-1899,Procedural - Rules (ext),ct,0.54556155,0.012337931
+UK,1900-1924,Procedural - Rules (ext),ct,0.53922355,0.013783372
+UK,1925-1949,Procedural - Rules (ext),ct,0.5283954,0.01611711
+UK,1950-1974,Procedural - Rules (ext),ct,0.5157663,0.015947742
+UK,1975-1999,Procedural - Rules (ext),ct,0.50220025,0.01567885
+UK,2000-2024,Procedural - Rules (ext),ct,0.48780182,0.017105
+UK,1800-1849,Substantive - Democracy (ext),ct,0.6778186,0.009802072
+UK,1850-1874,Substantive - Democracy (ext),ct,0.6581192,0.0147086
+UK,1875-1899,Substantive - Democracy (ext),ct,0.635486,0.018096343
+UK,1900-1924,Substantive - Democracy (ext),ct,0.61390805,0.018371074
+UK,1925-1949,Substantive - Democracy (ext),ct,0.5879977,0.01756327
+UK,1950-1974,Substantive - Democracy (ext),ct,0.5570908,0.01823208
+UK,1975-1999,Substantive - Democracy (ext),ct,0.5336851,0.015454793
+UK,2000-2024,Substantive - Democracy (ext),ct,0.5091922,0.0204403
+US,1850-1874,Corruption,ct,0.24953972,0.013713408
+US,1875-1899,Corruption,ct,0.22408994,0.017234452
+US,1900-1924,Corruption,ct,0.21050082,0.023192495
+US,1925-1949,Corruption,ct,0.19794048,0.021095386
+US,1950-1974,Corruption,ct,0.18658756,0.018685456
+US,1975-1999,Corruption,ct,0.17923714,0.01881642
+US,2000-2024,Corruption,ct,0.16846472,0.01808879
+US,1850-1874,Procedural - Judiciary (ext),ct,0.45937413,0.00841182
+US,1875-1899,Procedural - Judiciary (ext),ct,0.4563504,0.013112507
+US,1900-1924,Procedural - Judiciary (ext),ct,0.44339833,0.01724914
+US,1925-1949,Procedural - Judiciary (ext),ct,0.42576608,0.021618253
+US,1950-1974,Procedural - Judiciary (ext),ct,0.4060545,0.024242517
+US,1975-1999,Procedural - Judiciary (ext),ct,0.3913225,0.022100937
+US,2000-2024,Procedural - Judiciary (ext),ct,0.3756447,0.022198807
+US,1850-1874,Procedural - Rules (ext),ct,0.49031356,0.010510972
+US,1875-1899,Procedural - Rules (ext),ct,0.48103398,0.01259921
+US,1900-1924,Procedural - Rules (ext),ct,0.4724326,0.014853046
+US,1925-1949,Procedural - Rules (ext),ct,0.46856818,0.015289176
+US,1950-1974,Procedural - Rules (ext),ct,0.462083,0.013646458
+US,1975-1999,Procedural - Rules (ext),ct,0.4567053,0.013826508
+US,2000-2024,Procedural - Rules (ext),ct,0.44371602,0.015008
+US,1850-1874,Substantive - Democracy (ext),ct,0.55935234,0.012876534
+US,1875-1899,Substantive - Democracy (ext),ct,0.5246413,0.01466266
+US,1900-1924,Substantive - Democracy (ext),ct,0.48944697,0.016449751
+US,1925-1949,Substantive - Democracy (ext),ct,0.45673293,0.022942426
+US,1950-1974,Substantive - Democracy (ext),ct,0.42197773,0.027047856
+US,1975-1999,Substantive - Democracy (ext),ct,0.4007471,0.024249962
+US,2000-2024,Substantive - Democracy (ext),ct,0.37747875,0.02249111
+US_full,1850-1874,Corruption,ct,0.3041406,0.01502884
+US_full,1875-1899,Corruption,ct,0.29403338,0.014752483
+US_full,1900-1924,Corruption,ct,0.2899967,0.018249344
+US_full,1925-1949,Corruption,ct,0.2852935,0.02028913
+US_full,1950-1974,Corruption,ct,0.28145513,0.017956821
+US_full,1975-1999,Corruption,ct,0.2708493,0.02340205
+US_full,2000-2024,Corruption,ct,0.25786632,0.023661474
+US_full,1850-1874,Procedural - Judiciary (ext),ct,0.53966314,0.009761293
+US_full,1875-1899,Procedural - Judiciary (ext),ct,0.52496797,0.012966754
+US_full,1900-1924,Procedural - Judiciary (ext),ct,0.50035703,0.019967388
+US_full,1925-1949,Procedural - Judiciary (ext),ct,0.48170245,0.022083508
+US_full,1950-1974,Procedural - Judiciary (ext),ct,0.46586534,0.021739503
+US_full,1975-1999,Procedural - Judiciary (ext),ct,0.4484135,0.021896968
+US_full,2000-2024,Procedural - Judiciary (ext),ct,0.43659952,0.018558005
+US_full,1850-1874,Procedural - Rules (ext),ct,0.5301543,0.009502299
+US_full,1875-1899,Procedural - Rules (ext),ct,0.52269906,0.008834051
+US_full,1900-1924,Procedural - Rules (ext),ct,0.5134364,0.011338523
+US_full,1925-1949,Procedural - Rules (ext),ct,0.50716305,0.013718356
+US_full,1950-1974,Procedural - Rules (ext),ct,0.5024297,0.012839862
+US_full,1975-1999,Procedural - Rules (ext),ct,0.49375087,0.015755504
+US_full,2000-2024,Procedural - Rules (ext),ct,0.48546943,0.016847668
+US_full,1850-1874,Substantive - Democracy (ext),ct,0.6514364,0.012478313
+US_full,1875-1899,Substantive - Democracy (ext),ct,0.62279207,0.013009034
+US_full,1900-1924,Substantive - Democracy (ext),ct,0.5943467,0.015823906
+US_full,1925-1949,Substantive - Democracy (ext),ct,0.56700784,0.017233407
+US_full,1950-1974,Substantive - Democracy (ext),ct,0.5428082,0.01981533
+US_full,1975-1999,Substantive - Democracy (ext),ct,0.5190433,0.022014108
+US_full,2000-2024,Substantive - Democracy (ext),ct,0.49341005,0.019639313
