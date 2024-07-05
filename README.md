@@ -1,7 +1,7 @@
 # unravelling-rule-of-law
 **Shiny App Unravelling the Rule of Law Project**
 
-[![Version](https://raw.githubusercontent.com/rol-project/unravelling-rule-of-law/master/badges/v_1_1_3.svg)](CHANGELOG.md) [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://raw.githubusercontent.com/rol-project/unravelling-rule-of-law/master/badges/active.svg)](STATUS.md) [![License](https://raw.githubusercontent.com/rol-project/unravelling-rule-of-law/master/badges/cc_by_4_0.svg)](LICENSE.md) [![License](https://raw.githubusercontent.com/rol-project/unravelling-rule-of-law/master/badges/gnu.svg)](LICENSE-GPL.md)  [![NWO](https://raw.githubusercontent.com/rol-project/unravelling-rule-of-law/master/badges/nwo.svg)](https://www.nwo.nl/en)
+[![Version](https://raw.githubusercontent.com/rol-project/unravelling-rule-of-law/master/badges/v_1_1_4.svg)](CHANGELOG.md) [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://raw.githubusercontent.com/rol-project/unravelling-rule-of-law/master/badges/active.svg)](STATUS.md) [![License](https://raw.githubusercontent.com/rol-project/unravelling-rule-of-law/master/badges/cc_by_4_0.svg)](LICENSE.md) [![License](https://raw.githubusercontent.com/rol-project/unravelling-rule-of-law/master/badges/gnu.svg)](LICENSE-GPL.md)  [![NWO](https://raw.githubusercontent.com/rol-project/unravelling-rule-of-law/master/badges/nwo.svg)](https://www.nwo.nl/en)
 
 ## Overview
 
@@ -31,4 +31,4 @@ b.a.gonzalez.bustamante@fgga.leidenuniv.nl \
 
 ### Latest Revision
 
-[June 28, 2024](CHANGELOG.md).
+[July 5, 2024](CHANGELOG.md).

@@ -5,6 +5,11 @@ All notable changes to "Unravelling the Rule of Law Shiny App" will be documente
 
 ## [Released]
 
+## [1.1.4] - 2024-07-05
+### Changed
+- Cosine similarity estimates UK-US.
+- Grey plots for paper.
+
 ## [1.1.3] - 2024-06-28
 ### Changed
 - Cosine similarity estimates UK-US.
