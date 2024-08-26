@@ -3,7 +3,20 @@ All notable changes to "Unravelling the Rule of Law Shiny App" will be documente
 
 ## [Unreleased]
 
+## [1.2.6] - TBC
+### Changed
+- Shiny app code.
+- Minor corrections.
+
 ## [Released]
+
+## [1.2.5] - 2024-08-26
+### Added
+- Cross-lingual plots.
+- WPJ indicators data.
+- WPJ indicators recalculations.
+### Changed
+- Minor corrections.
 
 ## [1.1.5] - 2024-07-31
 ### Changed
