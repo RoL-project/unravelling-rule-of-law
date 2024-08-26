@@ -19,7 +19,7 @@ parlamint$upper_ci <- parlamint$cosine + 1.96 * parlamint$se
 pdf("results/figures/crosslingual_Great_Britain.pdf", width = 6.826666666666667, height = 5.12)
 png("results/figures/crosslingual_Great_Britain.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 ggplot(aes(x = cosine, y = factor(cluster, levels = rev(levels(factor(cluster)))),
-           color = model, group = model), data = subset(parlamint, country == "Great Britain")) +
+           color = model, group = model), data = subset(parlamint, country == "Great Britain" & cluster != "Substantive - Democracy")) +
   geom_errorbar(aes(xmin = lower_ci, xmax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
   geom_point(shape = 18, size = 1.5, position = position_dodge(0.3)) + 
   scale_colour_grey(name = "Model") +
@@ -32,7 +32,7 @@ dev.off()
 pdf("results/figures/crosslingual_France.pdf", width = 6.826666666666667, height = 5.12)
 png("results/figures/crosslingual_France.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 ggplot(aes(x = cosine, y = factor(cluster, levels = rev(levels(factor(cluster)))),
-           color = model, group = model), data = subset(parlamint, country == "France")) +
+           color = model, group = model), data = subset(parlamint, country == "France" & cluster != "Substantive - Democracy")) +
   geom_errorbar(aes(xmin = lower_ci, xmax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
   geom_point(shape = 18, size = 1.5, position = position_dodge(0.3)) + 
   scale_colour_grey(name = "Model") +
@@ -45,7 +45,7 @@ dev.off()
 pdf("results/figures/crosslingual_Germany.pdf", width = 6.826666666666667, height = 5.12)
 png("results/figures/crosslingual_Germany.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 ggplot(aes(x = cosine, y = factor(cluster, levels = rev(levels(factor(cluster)))),
-           color = model, group = model), data = subset(parlamint, country == "Germany")) +
+           color = model, group = model), data = subset(parlamint, country == "Germany" & cluster != "Substantive - Democracy")) +
   geom_errorbar(aes(xmin = lower_ci, xmax = upper_ci), width = 0.1, position = position_dodge(0.3)) +
   geom_point(shape = 18, size = 1.5, position = position_dodge(0.3)) + 
   scale_colour_grey(name = "Model") +
@@ -58,7 +58,7 @@ dev.off()
 pdf("results/figures/crosslingual_Netherlands.pdf", width = 6.826666666666667, height = 5.12)
 png("results/figures/crosslingual_Netherlands.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 ggplot(aes(x = cosine, y = factor(cluster, levels = rev(levels(factor(cluster)))),
-           color = model, group = model), data = subset(parlamint, country == "Netherlands")) +
+           color = model, group = model), data = subset(parlamint, country == "Netherlands" & cluster != "Substantive - Democracy")) +
   geom_errorbar(aes(xmin = lower_ci, xmax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
   geom_point(shape = 18, size = 1.5, position = position_dodge(0.3)) + 
   scale_colour_grey(name = "Model") +
@@ -71,7 +71,7 @@ dev.off()
 pdf("results/figures/crosslingual_Italy.pdf", width = 6.826666666666667, height = 5.12)
 png("results/figures/crosslingual_Italy.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 ggplot(aes(x = cosine, y = factor(cluster, levels = rev(levels(factor(cluster)))),
-           color = model, group = model), data = subset(parlamint, country == "Italy")) +
+           color = model, group = model), data = subset(parlamint, country == "Italy" & cluster != "Substantive - Democracy")) +
   geom_errorbar(aes(xmin = lower_ci, xmax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
   geom_point(shape = 18, size = 1.5, position = position_dodge(0.3)) + 
   scale_colour_grey(name = "Model") +
@@ -84,7 +84,7 @@ dev.off()
 pdf("results/figures/crosslingual_Spain.pdf", width = 6.826666666666667, height = 5.12)
 png("results/figures/crosslingual_Spain.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 ggplot(aes(x = cosine, y = factor(cluster, levels = rev(levels(factor(cluster)))),
-           color = model, group = model), data = subset(parlamint, country == "Spain")) +
+           color = model, group = model), data = subset(parlamint, country == "Spain" & cluster != "Substantive - Democracy")) +
   geom_errorbar(aes(xmin = lower_ci, xmax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
   geom_point(shape = 18, size = 1.5, position = position_dodge(0.3)) + 
   scale_colour_grey(name = "Model") +
@@ -97,7 +97,7 @@ dev.off()
 pdf("results/figures/crosslingual_Hungary.pdf", width = 6.826666666666667, height = 5.12)
 png("results/figures/crosslingual_Hungary.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 ggplot(aes(x = cosine, y = factor(cluster, levels = rev(levels(factor(cluster)))),
-           color = model, group = model), data = subset(parlamint, country == "Hungary")) +
+           color = model, group = model), data = subset(parlamint, country == "Hungary" & cluster != "Substantive - Democracy")) +
   geom_errorbar(aes(xmin = lower_ci, xmax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
   geom_point(shape = 18, size = 1.5, position = position_dodge(0.3)) + 
   scale_colour_grey(name = "Model") +
@@ -110,7 +110,7 @@ dev.off()
 pdf("results/figures/crosslingual_Poland.pdf", width = 6.826666666666667, height = 5.12)
 png("results/figures/crosslingual_Poland.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 ggplot(aes(x = cosine, y = factor(cluster, levels = rev(levels(factor(cluster)))),
-           color = model, group = model), data = subset(parlamint, country == "Poland")) +
+           color = model, group = model), data = subset(parlamint, country == "Poland" & cluster != "Substantive - Democracy")) +
   geom_errorbar(aes(xmin = lower_ci, xmax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
   geom_point(shape = 18, size = 1.5, position = position_dodge(0.3)) + 
   scale_colour_grey(name = "Model") +
@@ -137,19 +137,6 @@ pdf("results/figures/crosslingual_rules.pdf", width = 6.826666666666667, height 
 png("results/figures/crosslingual_rules.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 ggplot(aes(x = cosine, y = factor(country, levels = rev(levels(factor(country)))), color = model, group = model), 
        data = subset(parlamint, cluster == "Procedural - Rules")) +
-  geom_errorbar(aes(xmin = lower_ci, xmax = upper_ci), width = 0.2, position = position_dodge(0.8)) +
-  geom_point(shape = 18, size = 2, position = position_dodge(0.8)) + 
-  scale_colour_grey(name = "Model") +
-  theme_minimal(base_size = 12) + theme(legend.position = "bottom") +
-  coord_cartesian(expand = TRUE, xlim = c(0, 1)) +
-  theme(panel.grid.minor = element_blank()) +
-  labs(y = NULL, x = "Cosine Similarity", title = NULL, subtitle = NULL, caption = NULL)
-dev.off()
-
-pdf("results/figures/crosslingual_democracy.pdf", width = 6.826666666666667, height = 5.12)
-png("results/figures/crosslingual_democracy.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
-ggplot(aes(x = cosine, y = factor(country, levels = rev(levels(factor(country)))), color = model, group = model), 
-       data = subset(parlamint, cluster == "Substantive - Democracy")) +
   geom_errorbar(aes(xmin = lower_ci, xmax = upper_ci), width = 0.2, position = position_dodge(0.8)) +
   geom_point(shape = 18, size = 2, position = position_dodge(0.8)) + 
   scale_colour_grey(name = "Model") +
