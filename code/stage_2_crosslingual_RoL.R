@@ -29,19 +29,6 @@ ggplot(aes(x = cosine, y = factor(cluster, levels = rev(levels(factor(cluster)))
   labs(y = NULL, x = "Cosine Similarity", title = "A. Great Britain", subtitle = NULL, caption = NULL)
 dev.off()
 
-pdf("results/figures/crosslingual_France.pdf", width = 6.826666666666667, height = 5.12)
-png("results/figures/crosslingual_France.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
-ggplot(aes(x = cosine, y = factor(cluster, levels = rev(levels(factor(cluster)))),
-           color = model, group = model), data = subset(parlamint, country == "France" & cluster != "Substantive - Democracy")) +
-  geom_errorbar(aes(xmin = lower_ci, xmax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
-  geom_point(shape = 18, size = 1.5, position = position_dodge(0.3)) + 
-  scale_colour_grey(name = "Model") +
-  theme_minimal(base_size = 12) + theme(legend.position = "bottom") +
-  coord_cartesian(expand = TRUE, xlim = c(0, 1)) +
-  theme(panel.grid.minor = element_blank()) +
-  labs(y = NULL, x = "Cosine Similarity", title = "B. France", subtitle = NULL, caption = NULL)
-dev.off()
-
 pdf("results/figures/crosslingual_Germany.pdf", width = 6.826666666666667, height = 5.12)
 png("results/figures/crosslingual_Germany.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 ggplot(aes(x = cosine, y = factor(cluster, levels = rev(levels(factor(cluster)))),
@@ -52,7 +39,7 @@ ggplot(aes(x = cosine, y = factor(cluster, levels = rev(levels(factor(cluster)))
   theme_minimal(base_size = 12) + theme(legend.position = "bottom") +
   coord_cartesian(expand = TRUE, xlim = c(0, 1)) +
   theme(panel.grid.minor = element_blank()) +
-  labs(y = NULL, x = "Cosine Similarity", title = "C. Germany", subtitle = NULL, caption = NULL)
+  labs(y = NULL, x = "Cosine Similarity", title = "B. Germany", subtitle = NULL, caption = NULL)
 dev.off()
 
 pdf("results/figures/crosslingual_Netherlands.pdf", width = 6.826666666666667, height = 5.12)
@@ -65,7 +52,20 @@ ggplot(aes(x = cosine, y = factor(cluster, levels = rev(levels(factor(cluster)))
   theme_minimal(base_size = 12) + theme(legend.position = "bottom") +
   coord_cartesian(expand = TRUE, xlim = c(0, 1)) +
   theme(panel.grid.minor = element_blank()) +
-  labs(y = NULL, x = "Cosine Similarity", title = "D. Netherlands", subtitle = NULL, caption = NULL)
+  labs(y = NULL, x = "Cosine Similarity", title = "C. Netherlands", subtitle = NULL, caption = NULL)
+dev.off()
+
+pdf("results/figures/crosslingual_France.pdf", width = 6.826666666666667, height = 5.12)
+png("results/figures/crosslingual_France.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
+ggplot(aes(x = cosine, y = factor(cluster, levels = rev(levels(factor(cluster)))),
+           color = model, group = model), data = subset(parlamint, country == "France" & cluster != "Substantive - Democracy")) +
+  geom_errorbar(aes(xmin = lower_ci, xmax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
+  geom_point(shape = 18, size = 1.5, position = position_dodge(0.3)) + 
+  scale_colour_grey(name = "Model") +
+  theme_minimal(base_size = 12) + theme(legend.position = "bottom") +
+  coord_cartesian(expand = TRUE, xlim = c(0, 1)) +
+  theme(panel.grid.minor = element_blank()) +
+  labs(y = NULL, x = "Cosine Similarity", title = "D. France", subtitle = NULL, caption = NULL)
 dev.off()
 
 pdf("results/figures/crosslingual_Italy.pdf", width = 6.826666666666667, height = 5.12)
