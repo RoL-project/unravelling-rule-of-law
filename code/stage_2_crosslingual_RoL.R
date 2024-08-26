@@ -204,8 +204,6 @@ wjp <- wjp %>% mutate(WJP_difference = abs(WJP - WJP_Recalculated))
 
 wjp_order <- wjp %>% arrange(desc(WJP_difference))
 
-table(wjp$Country.Code)
-
 wjp_selected <- wjp %>% filter(Country.Code == "POL" | 
                                  Country.Code == "HUN" | 
                                  Country.Code == "ITA" | 
