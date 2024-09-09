@@ -1,14 +1,21 @@
 # Changelog
-All notable changes to "Unravelling the Rule of Law Shiny App" will be documented in this file.
+All notable changes to "Unravelling the Rule of Law Repository" will be documented in this file.
 
 ## [Unreleased]
 
-## [1.2.6] - TBC
+## [1.4.5] - TBC
+### Added
+- Keyedvectors ParlaMint.
 ### Changed
 - Shiny app code.
 - Minor corrections.
 
 ## [Released]
+
+## [1.3.5] - 2024-09-09
+### Added
+- Zenodo DOI.
+- Keyedvectors UK-US.
 
 ## [1.2.5] - 2024-08-26
 ### Added
