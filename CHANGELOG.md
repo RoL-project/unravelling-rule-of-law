@@ -6,6 +6,7 @@ All notable changes to "Unravelling the Rule of Law Repository" will be document
 ## [1.4.5] - TBC
 ### Added
 - Keyedvectors ParlaMint.
+- Zenodo DOI.
 ### Changed
 - Shiny app code.
 - Minor corrections.
@@ -14,7 +15,6 @@ All notable changes to "Unravelling the Rule of Law Repository" will be document
 
 ## [1.3.5] - 2024-09-09
 ### Added
-- Zenodo DOI.
 - Keyedvectors UK-US.
 
 ## [1.2.5] - 2024-08-26
