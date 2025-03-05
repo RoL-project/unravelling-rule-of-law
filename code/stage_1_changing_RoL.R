@@ -1,9 +1,10 @@
 ## Jaroslaw Kantorowicz and Bastián González-Bustamante
 ## Faculty of Governance and Global Affairs, Leiden University
-## June-July 2024
+## June-July 2024 and March 2025
 
 ## Packages
 library(ggplot2)
+library(patchwork)
 
 ## Data
 data <- read.csv("data/tidy/summary_UK_US.csv", sep = ",", encoding = "UTF-8")
@@ -12,7 +13,8 @@ data$model <- ifelse(data$model == "ct", "Chronologically Trained Model",
                      ifelse(data$model == "naive", "Naive Time Model",
                             ifelse(data$model == "overlapping", "Overlapping Model", 
                                    ifelse(data$model == "ct-alt", "Alt. Chronologically Trained", 
-                                          ifelse(data$model == "distilBERT", "DistilBERT Embeddings", data$model)))))
+                                          ifelse(data$model == "distilBERT", "DistilBERT Embeddings", 
+                                                 ifelse(data$model == "ct-bias", "Word2Vec with Bias Reduction", data$model))))))
 
 ## 95% CIs
 data$se <- data$std / sqrt(bootstrap)
@@ -20,11 +22,12 @@ data$lower_ci <- data$cosine - 1.96 * data$se
 data$upper_ci <- data$cosine + 1.96 * data$se
 
 ## Chronologically Trained Model UK
-pdf("results/figures/01_CT_UK.pdf", width = 6.826666666666667, height = 5.12)
-png("results/figures/01_CT_UK.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
-ggplot(aes(x = period, y = cosine, color = cluster, group = cluster), 
-       data = subset(data, model == "Chronologically Trained Model" & country == "UK" 
-                     & cluster != "Corruption" & cluster != "Procedural - Judiciary (ext)" & cluster != "Procedural - Rules (ext)" & cluster != "Substantive - Democracy (ext)")) +
+## pdf("results/figures/01_CT_UK.pdf", width = 6.826666666666667, height = 5.12)
+## png("results/figures/01_CT_UK.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
+uk_1 <- ggplot(aes(x = period, y = cosine, color = cluster, group = cluster), 
+               data = subset(data, model == "Chronologically Trained Model" & country == "UK" 
+                             & cluster != "Corruption" & cluster != "Procedural - Judiciary (ext)" & cluster != "Procedural - Rules (ext)" 
+                             & cluster != "Substantive - Democracy (ext)")) +
   geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
   geom_point(aes(shape = cluster), size = 1.5, position = position_dodge(0.3)) + 
   geom_line(aes(color = cluster, linetype = cluster), position = position_dodge(0.3), size = 0.5) +
@@ -37,15 +40,40 @@ ggplot(aes(x = period, y = cosine, color = cluster, group = cluster),
         panel.background = element_blank(),
         axis.line = element_blank(),
         axis.text.x = element_text(angle = 35, hjust = 1)) +
-  labs(x = NULL, y = "Cosine Similarity", title = NULL, subtitle = NULL, caption = NULL)
-dev.off()
+  labs(x = NULL, y = "Baseline Cosine Similarity", title = NULL, subtitle = NULL, caption = NULL)
+## dev.off()
+
+## Chronologically Trained Model UK with Bias Reduction
+uk_2 <- ggplot(aes(x = period, y = cosine, color = cluster, group = cluster), 
+               data = subset(data, model == "Word2Vec with Bias Reduction" & country == "UK" 
+                             & cluster != "Corruption" & cluster != "Procedural - Judiciary (ext)" & cluster != "Procedural - Rules (ext)" 
+                             & cluster != "Substantive - Democracy (ext)")) +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
+  geom_point(aes(shape = cluster), size = 1.5, position = position_dodge(0.3)) + 
+  geom_line(aes(color = cluster, linetype = cluster), position = position_dodge(0.3), size = 0.5) +
+  scale_colour_grey() +
+  theme_classic() + coord_cartesian(expand = TRUE, ylim = c(0.2, 0.8)) +
+  theme(axis.title.x = element_text(face = "bold"),
+        axis.title.y = element_text(face = "bold"),
+        legend.title = element_blank(),
+        panel.border = element_rect(colour = "black", fill = NA, size = 0.7),
+        panel.background = element_blank(),
+        axis.line = element_blank(),
+        axis.text.x = element_text(angle = 35, hjust = 1)) +
+  labs(x = NULL, y = "Cosine with Popularity-Bias Reduction", title = NULL, subtitle = NULL, caption = NULL)
+
+## Combined Plot
+CT_UK_bias_reduction <- uk_1 + uk_2 + plot_layout(guides = 'collect') & theme(legend.position = "bottom")
+ggsave("results/figures/01_CT_UK_bias_reduction.pdf", plot = CT_UK_bias_reduction, width = 11, height = 6.5, units = "in")
+ggsave("results/figures/01_CT_UK_bias_reduction.png", plot = CT_UK_bias_reduction, width = 11, height = 6.5, units = "in", dpi = 300)
 
 ## Chronologically Trained Model US
-pdf("results/figures/02_CT_US.pdf", width = 6.826666666666667, height = 5.12)
-png("results/figures/02_CT_US.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
-ggplot(aes(x = period, y = cosine, color = cluster, group = cluster), 
-       data = subset(data, model == "Chronologically Trained Model" & country == "US" 
-                     & cluster != "Corruption" & cluster != "Procedural - Judiciary (ext)" & cluster != "Procedural - Rules (ext)" & cluster != "Substantive - Democracy (ext)")) +
+## pdf("results/figures/02_CT_US.pdf", width = 6.826666666666667, height = 5.12)
+## png("results/figures/02_CT_US.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
+us_1 <- ggplot(aes(x = period, y = cosine, color = cluster, group = cluster), 
+               data = subset(data, model == "Chronologically Trained Model" & country == "US" 
+                             & cluster != "Corruption" & cluster != "Procedural - Judiciary (ext)" & cluster != "Procedural - Rules (ext)" 
+                             & cluster != "Substantive - Democracy (ext)")) +
   geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
   geom_point(aes(shape = cluster), size = 1.5, position = position_dodge(0.3)) + 
   geom_line(aes(color = cluster, linetype = cluster), position = position_dodge(0.3), size = 0.5) +
@@ -58,15 +86,40 @@ ggplot(aes(x = period, y = cosine, color = cluster, group = cluster),
         panel.background = element_blank(),
         axis.line = element_blank(),
         axis.text.x = element_text(angle = 35, hjust = 1)) +
-  labs(x = NULL, y = "Cosine Similarity", title = NULL, subtitle = NULL, caption = NULL)
-dev.off()
+  labs(x = NULL, y = "Baseline Cosine Similarity", title = NULL, subtitle = NULL, caption = NULL)
+## dev.off()
+
+## Chronologically Trained Model US with Bias Reduction
+us_2 <- ggplot(aes(x = period, y = cosine, color = cluster, group = cluster), 
+               data = subset(data, model == "Word2Vec with Bias Reduction" & country == "US" 
+                             & cluster != "Corruption" & cluster != "Procedural - Judiciary (ext)" & cluster != "Procedural - Rules (ext)" 
+                             & cluster != "Substantive - Democracy (ext)")) +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
+  geom_point(aes(shape = cluster), size = 1.5, position = position_dodge(0.3)) + 
+  geom_line(aes(color = cluster, linetype = cluster), position = position_dodge(0.3), size = 0.5) +
+  scale_colour_grey() +
+  theme_classic() + coord_cartesian(expand = TRUE, ylim = c(0.2, 0.8)) +
+  theme(axis.title.x = element_text(face = "bold"),
+        axis.title.y = element_text(face = "bold"),
+        legend.title = element_blank(),
+        panel.border = element_rect(colour = "black", fill = NA, size = 0.7),
+        panel.background = element_blank(),
+        axis.line = element_blank(),
+        axis.text.x = element_text(angle = 35, hjust = 1)) +
+  labs(x = NULL, y = "Cosine with Popularity-Bias Reduction", title = NULL, subtitle = NULL, caption = NULL)
+
+## Combined Plot
+CT_US_bias_reduction <- us_1 + us_2 + plot_layout(guides = 'collect') & theme(legend.position = "bottom")
+ggsave("results/figures/02_CT_US_bias_reduction.pdf", plot = CT_US_bias_reduction, width = 11, height = 6.5, units = "in")
+ggsave("results/figures/02_CT_US_bias_reduction.png", plot = CT_US_bias_reduction, width = 11, height = 6.5, units = "in", dpi = 300)
 
 ## Chronologically Trained Model US full
-pdf("results/figures/03_CT_full_US.pdf", width = 6.826666666666667, height = 5.12)
-png("results/figures/03_CT_full_US.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
-ggplot(aes(x = period, y = cosine, color = cluster, group = cluster), 
-       data = subset(data, model == "Chronologically Trained Model" & country == "US_full"
-                     & cluster != "Corruption" & cluster != "Procedural - Judiciary (ext)" & cluster != "Procedural - Rules (ext)" & cluster != "Substantive - Democracy (ext)")) +
+## pdf("results/figures/03_CT_full_US.pdf", width = 6.826666666666667, height = 5.12)
+## png("results/figures/03_CT_full_US.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
+us_full_1 <- ggplot(aes(x = period, y = cosine, color = cluster, group = cluster), 
+                    data = subset(data, model == "Chronologically Trained Model" & country == "US_full"
+                                  & cluster != "Corruption" & cluster != "Procedural - Judiciary (ext)" & cluster != "Procedural - Rules (ext)" 
+                                  & cluster != "Substantive - Democracy (ext)")) +
   geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
   geom_point(aes(shape = cluster), size = 1.5, position = position_dodge(0.3)) + 
   geom_line(aes(color = cluster, linetype = cluster), position = position_dodge(0.3), size = 0.5) +
@@ -79,8 +132,32 @@ ggplot(aes(x = period, y = cosine, color = cluster, group = cluster),
         panel.background = element_blank(),
         axis.line = element_blank(),
         axis.text.x = element_text(angle = 35, hjust = 1)) +
-  labs(x = NULL, y = "Cosine Similarity", title = NULL, subtitle = NULL, caption = NULL)
-dev.off()
+  labs(x = NULL, y = "Baseline Cosine Similarity", title = NULL, subtitle = NULL, caption = NULL)
+## dev.off()
+
+## Chronologically Trained Model US full with Bias Reduction
+us_full_2 <- ggplot(aes(x = period, y = cosine, color = cluster, group = cluster), 
+               data = subset(data, model == "Word2Vec with Bias Reduction" & country == "US_full" 
+                             & cluster != "Corruption" & cluster != "Procedural - Judiciary (ext)" & cluster != "Procedural - Rules (ext)" 
+                             & cluster != "Substantive - Democracy (ext)")) +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2, position = position_dodge(0.3)) +
+  geom_point(aes(shape = cluster), size = 1.5, position = position_dodge(0.3)) + 
+  geom_line(aes(color = cluster, linetype = cluster), position = position_dodge(0.3), size = 0.5) +
+  scale_colour_grey() +
+  theme_classic() + coord_cartesian(expand = TRUE, ylim = c(0.2, 0.8)) +
+  theme(axis.title.x = element_text(face = "bold"),
+        axis.title.y = element_text(face = "bold"),
+        legend.title = element_blank(),
+        panel.border = element_rect(colour = "black", fill = NA, size = 0.7),
+        panel.background = element_blank(),
+        axis.line = element_blank(),
+        axis.text.x = element_text(angle = 35, hjust = 1)) +
+  labs(x = NULL, y = "Cosine with Popularity-Bias Reduction", title = NULL, subtitle = NULL, caption = NULL)
+
+## Combined Plot
+CT_US_full_bias_reduction <- us_full_1 + us_full_2 + plot_layout(guides = 'collect') & theme(legend.position = "bottom")
+ggsave("results/figures/03_CT_US_full_bias_reduction.pdf", plot = CT_US_full_bias_reduction, width = 11, height = 6.5, units = "in")
+ggsave("results/figures/03_CT_US_full_bias_reduction.png", plot = CT_US_full_bias_reduction, width = 11, height = 6.5, units = "in", dpi = 300)
 
 ## Alt. Chronologically Trained Model UK
 pdf("results/figures/A1_CT_alt_UK.pdf", width = 6.826666666666667, height = 5.12)
